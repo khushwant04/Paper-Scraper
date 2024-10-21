@@ -7,8 +7,8 @@ class PapersWithCodeSpider(scrapy.Spider):
     start_urls = ["https://paperswithcode.com/sota"]
 
     custom_settings = {
-        'CONCURRENT_REQUESTS': 64,  # Number of concurrent requests
-        'DOWNLOAD_DELAY': 0.2,       # Delay between requests to avoid overwhelming the server
+        'CONCURRENT_REQUESTS': 256,  # Number of concurrent requests
+        'DOWNLOAD_DELAY': 0.1,       # Delay between requests to avoid overwhelming the server
         'CONCURRENT_REQUESTS_PER_DOMAIN': 8,  # Limit concurrent requests per domain
         'CONCURRENT_REQUESTS_PER_IP': 8,       # Limit concurrent requests per IP
     }

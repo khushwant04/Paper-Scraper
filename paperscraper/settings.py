@@ -27,10 +27,10 @@ FILES_STORE = 'research-papers'
 ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 64  # Increased for better performance
+CONCURRENT_REQUESTS = 256  # Increased for better performance
 
 # Configure a delay for requests for the same website (default: 0)
-DOWNLOAD_DELAY = 0.2  # Reduced delay to 0.5 seconds
+DOWNLOAD_DELAY = 0.1  # Reduced delay to 0.5 seconds
 RANDOMIZE_DOWNLOAD_DELAY = True  # Randomize download delay
 
 # Enable and configure the AutoThrottle extension (disabled by default)
